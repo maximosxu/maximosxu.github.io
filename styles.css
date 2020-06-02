@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Home Landing Page and Navigation Bar */
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 25px;
+    position: fixed;
+    right: 0;
+    z-index: 9999; 
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: 0.6s ease;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1 {
+    color: white;
+    font-size: 100px;
+    white-space: nowrap;
+}
+
+.title p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* About Me Section */
+.about {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(img/aboutbackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about h1 {
+    color: white;
+    font-size: 70px;
+    padding-top: 50px;
+    padding-left: 110px;
+}
+
+.about h1:after {
+    content: '';
+    position: absolute;
+    width: 270px;
+    height: 2px;
+    background-color: white;
+    margin-left: -290px;
+    margin-top: 100px;
+}
+
+.about .selfie {
+    float: right;
+}
+
+.about .selfie img {
+    height: 700px;
+    margin-left: 300px;
+    margin-top: -636px;
+}
+
+.about .info {
+    float: left;
+    height: 500px;
+    width: 800px;
+    color: white;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 160px;
+}
+
+/* Projects Section */
+
+.projects {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(img/projectbackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.projects h1 {
+    color: white;
+    font-size: 70px;
+    padding-top: 60px;
+    padding-left: 110px;
+}
+
+.projects h1:after {
+    content: '';
+    position: absolute;
+    width: 270px;
+    height: 2px;
+    background-color: white;
+    margin-left: -320px;
+    margin-top: 100px;
+}
+
+.projects .project1, 
+.projects .project2, 
+.projects .project3 {
+    height: 300px;
+    width: 30%;
+    float: left;
+    margin-top: 65px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .project1 {
+    margin-left: 2%;
+    margin-right: 1.5%;
+    background-image: url(img/project1.png);
+    background-size: contain;
+}
+
+.projects .project2 {
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: url(img/music.png);
+    background-size: contain;
+}
+
+.projects .project3 {
+    margin-left: 1.5%;
+    margin-right: 2%;
+    background-image: url(img/django.png);
+    background-size: cover;
+}
+
+.projects .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 310px;
+}
+
+.projects .overlay:hover {
+    padding-top: 120px;
+    background-color: rgba(0,0,0,0.6);
+    transition: all 0.5s ease;
+}
+
+.overlay a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.projects .projectname1, 
+.projects .projectname2, 
+.projects .projectname3 {
+    height: 70px;
+    width: 30%;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.projects .projectname1 {
+    margin-left: 2%;
+    margin-right: 1.5%;
+}
+
+.projects .projectname2 {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.projects .projectname3 {
+    margin-left: 1.5%;
+    margin-right: 2%;
+}
+
+/* CONTACT INFORMATION */
+
+.contact {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(img/contact.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact h1 {
+    color: white;
+    font-size: 70px;
+    padding-top: 60px;
+    padding-left: 110px;
+}
+
+.contact h1:after {
+    content: '';
+    position: absolute;
+    width: 270px;
+    height: 2px;
+    background-color: white;
+    margin-left: -330px;
+    margin-top: 100px;
+}
+
+.contact h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact .socialmedia {
+    position: absolute;
+    font-size: 60px;
+    left: 615px; 
+    top: 2805px;
+}
+
+.socialmedia a:hover {
+    text-decoration: none;
+    transform: scale(1.3);
+}
