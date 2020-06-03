@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
@@ -16,7 +16,7 @@ header{
 
 ul {
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 1.5em;
     position: fixed;
     right: 0;
     z-index: 9999; 
@@ -29,11 +29,11 @@ ul li {
 ul li a {
     text-decoration: none;
     color: white;
-    padding: 5px 20px;
-    border: 1px solid transparent;
+    padding: .3125em 1em;
+    border: .0625em solid transparent;
     font-weight: 500;
     transition: 0.6s ease;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 ul li a:hover {
@@ -50,14 +50,14 @@ ul li a:hover {
 
 .title h1 {
     color: white;
-    font-size: 100px;
+    font-size: 6.25em;
     white-space: nowrap;
 }
 
 .title p {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 /* About Me Section */
@@ -71,19 +71,19 @@ ul li a:hover {
 
 .about h1 {
     color: white;
-    font-size: 70px;
-    padding-top: 50px;
-    padding-left: 110px;
+    font-size: 4.375em;
+    padding-top: .72em;
+    padding-left: 1.5em;
 }
 
 .about h1:after {
     content: '';
     position: absolute;
-    width: 270px;
-    height: 2px;
+    width: 3.9em;
+    height: .025em;
     background-color: white;
-    margin-left: -290px;
-    margin-top: 100px;
+    margin-left: -4.2em;
+    margin-top: 1.4em;
 }
 
 .about .selfie {
@@ -91,15 +91,15 @@ ul li a:hover {
 }
 
 .about .selfie img {
-    height: 700px;
-    margin-left: 300px;
-    margin-top: -636px;
+    height: 43.75em;
+    margin-left: 18.75em;
+    margin-top: -39.75em;
 }
 
 .about .info {
     float: left;
-    height: 500px;
-    width: 800px;
+    height: 16.7em;
+    width: 26.7em;
     color: white;
     font-size: 30px;
     margin-top: 70px;
