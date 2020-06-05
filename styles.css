@@ -1,22 +1,23 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
 
 /* Home Landing Page and Navigation Bar */
 
-header{
+.homepage{
     background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/background.jpg);
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-position: center;
 }
 
 ul {
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 3.5vh;
     position: fixed;
     right: 0;
     z-index: 9999; 
@@ -29,11 +30,11 @@ ul li {
 ul li a {
     text-decoration: none;
     color: white;
-    padding: 5px 20px;
-    border: 1px solid transparent;
+    padding: .6vh 2.6vh;
+    border: .1vh solid transparent;
     font-weight: 500;
     transition: 0.6s ease;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 ul li a:hover {
@@ -50,14 +51,14 @@ ul li a:hover {
 
 .title h1 {
     color: white;
-    font-size: 100px;
+    font-size: 8vw;
     white-space: nowrap;
 }
 
 .title p {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 /* About Me Section */
@@ -67,23 +68,24 @@ ul li a:hover {
     background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(img/aboutbackground.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .about h1 {
     color: white;
-    font-size: 70px;
-    padding-top: 50px;
-    padding-left: 110px;
+    font-size: 5vw;
+    padding-top: 6vh;
+    padding-left: 7vw;
 }
 
 .about h1:after {
     content: '';
     position: absolute;
-    width: 270px;
-    height: 2px;
+    width: 18vw;
+    height: .25vh;
     background-color: white;
-    margin-left: -290px;
-    margin-top: 100px;
+    margin-left: -20vw;
+    margin-top: 13vh;
 }
 
 .about .selfie {
@@ -91,19 +93,19 @@ ul li a:hover {
 }
 
 .about .selfie img {
-    height: 700px;
-    margin-left: 300px;
-    margin-top: -636px;
+    position: relative;
+    height: 90vh;
+    top: -6vh;
 }
 
 .about .info {
     float: left;
-    height: 500px;
-    width: 800px;
+    height: 30vh;
+    width: 57vw;
     color: white;
-    font-size: 30px;
-    margin-top: 70px;
-    margin-left: 160px;
+    font-size: 4vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
 }
 
 /* Projects Section */
@@ -117,49 +119,49 @@ ul li a:hover {
 }
 .projects h1 {
     color: white;
-    font-size: 70px;
-    padding-top: 60px;
-    padding-left: 110px;
+    font-size: 5vw;
+    padding-top: 6vh;
+    padding-left: 7vw;
 }
 
 .projects h1:after {
     content: '';
     position: absolute;
-    width: 270px;
-    height: 2px;
+    width: 20vw;
+    height: .25vh;
     background-color: white;
-    margin-left: -320px;
-    margin-top: 100px;
+    margin-left: -23vw;
+    margin-top: 13vh;
 }
 
 .projects .project1, 
 .projects .project2, 
 .projects .project3 {
-    height: 300px;
-    width: 30%;
+    height: 40vh;
+    width: 30vw;
     float: left;
-    margin-top: 65px;
+    margin-top: 8vh;
     position: relative;
     overflow: hidden;
 }
 
 .projects .project1 {
-    margin-left: 2%;
-    margin-right: 1.5%;
+    margin-left: 2vw;
+    margin-right: 1.5vw;
     background-image: url(img/project1.png);
     background-size: contain;
 }
 
 .projects .project2 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 1vw;
+    margin-right: 1vw;
     background-image: url(img/music.png);
     background-size: contain;
 }
 
 .projects .project3 {
-    margin-left: 1.5%;
-    margin-right: 2%;
+    margin-left: 1.5vw;
+    margin-right: 2vw;
     background-image: url(img/django.png);
     background-size: cover;
 }
@@ -169,20 +171,20 @@ ul li a:hover {
     height: 100%;
     position: absolute;
     text-align: center;
-    padding-top: 310px;
+    padding-top: 105vh;
 }
 
 .projects .overlay:hover {
-    padding-top: 120px;
+    padding-top: 17vh;
     background-color: rgba(0,0,0,0.6);
     transition: all 0.5s ease;
 }
 
 .overlay a{
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.5vw;
     padding: 10px 20px;
-    border: 1px solid white;
+    border: .1vh solid white;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -191,29 +193,28 @@ ul li a:hover {
 .projects .projectname1, 
 .projects .projectname2, 
 .projects .projectname3 {
-    height: 70px;
-    width: 30%;
+    width: 30vw;
     float: left;
     position: relative;
     text-align: center;
     color: white;
-    font-size: 20px;
-    margin-top: 35px;
+    font-size: 1.5vw;
+    margin-top: 4vh;
 }
 
 .projects .projectname1 {
-    margin-left: 2%;
-    margin-right: 1.5%;
+    margin-left: 2vw;
+    margin-right: 1.5vw;
 }
 
 .projects .projectname2 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .projects .projectname3 {
-    margin-left: 1.5%;
-    margin-right: 2%;
+    margin-left: 1.5vw;
+    margin-right: 2vw;
 }
 
 /* CONTACT INFORMATION */
@@ -228,26 +229,26 @@ ul li a:hover {
 
 .contact h1 {
     color: white;
-    font-size: 70px;
-    padding-top: 60px;
-    padding-left: 110px;
+    font-size: 5vw;
+    padding-top: 6vh;
+    padding-left: 7vw;
 }
 
 .contact h1:after {
     content: '';
     position: absolute;
-    width: 270px;
-    height: 2px;
+    width: 23vw;
+    height: .25vh;
     background-color: white;
-    margin-left: -330px;
-    margin-top: 100px;
+    margin-left: -25vw;
+    margin-top: 13vh;
 }
 
 .contact h2 {
     color: white;
-    font-size: 40px;
-    margin-top: 80px;
-    margin-left: 40px;
+    font-size: 3vw;
+    margin-top: 12vh;
+    margin-left: 5vw;
 }
 
 .contact a {
@@ -260,10 +261,10 @@ ul li a:hover {
 }
 
 .contact .socialmedia {
-    position: absolute;
-    font-size: 60px;
-    left: 615px; 
-    top: 2805px;
+    position: relative;
+    font-size: 10vh;
+    margin-left: 48vw;
+    top: -8.5vh;
 }
 
 .socialmedia a:hover {
